@@ -618,35 +618,34 @@ export const Subscription: React.FC = () => {
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden min-h-[230px] sm:min-h-0 aspect-[4/3] sm:aspect-[16/9] bg-slate-950">
                 {/* High quality cinematic streaming visual */}
                 <img 
-                  src="https://images.pexels.com/photos/4009402/pexels-photo-4009402.jpeg?auto=compress&cs=tinysrgb&w=1200" 
-                  alt="Modern 4K Smart TV in living room displaying streaming interface"
+                  src="/iptv-hero-interface.jpg" 
+                  alt="Modern 4K Smart TV displaying 18+ VIP Adult channels, Live TV, and Movies & Series VOD interface"
                   className="w-full h-full object-cover object-center"
                   loading="eager"
                 />
                 
-                {/* Dark Gradient Overlay for cinematic feel */}
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 sm:via-slate-950/40 to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-transparent to-slate-950/40" />
+                {/* Subtle bottom gradient overlay so the TV screen content stays clearly visible */}
+                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-slate-950/90 via-slate-950/35 to-transparent" />
 
                 {/* Overlaid UI Elements representing streaming content */}
-                <div className="absolute bottom-3 sm:bottom-8 left-3 sm:left-8 right-3 sm:right-8 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-3 sm:gap-4">
-                  <div className="space-y-1.5 sm:space-y-2 max-w-lg">
+                <div className="absolute bottom-3 sm:bottom-6 left-3 sm:left-6 right-3 sm:right-6 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-3 sm:gap-4">
+                  <div className="space-y-1.5 sm:space-y-2 max-w-xl">
                     <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+                      <span className="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded bg-rose-600 text-white text-[10px] sm:text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                        <Lock className="w-3 h-3" /> 18+ VIP ADULT
+                      </span>
                       <span className="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded bg-red-600 text-white text-[10px] sm:text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
-                        <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-white animate-pulse" /> LIVE
+                        <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-white animate-pulse" /> LIVE TV
                       </span>
                       <span className="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded bg-slate-900/80 border border-slate-700 text-white text-[10px] sm:text-xs font-semibold">
-                        4K UHD • 60 FPS
-                      </span>
-                      <span className="px-2 py-0.5 sm:px-2.5 sm:py-1 rounded bg-amber-400/20 text-amber-300 border border-amber-400/40 text-[10px] sm:text-xs font-semibold">
-                        🇺🇸 USA + 🇬🇧 UK
+                        MOVIES & VOD • 4K UHD
                       </span>
                     </div>
                     <h3 className="text-base sm:text-2xl lg:text-3xl font-bold text-white leading-snug drop-shadow-md">
-                      Live Sports, International News & VOD Cinema
+                      18+ Adult Channels, Live TV & Blockbuster Movies
                     </h3>
-                    <p className="text-xs sm:text-sm text-slate-300 line-clamp-2 drop-shadow">
-                      Watch championship matches, breaking live news, and trending series on your Smart TV, Firestick, phone, or tablet.
+                    <p className="text-xs sm:text-sm text-slate-200 line-clamp-2 drop-shadow">
+                      PIN-protected 18+ VIP adult channels alongside live sports, international television, and on-demand cinema on any screen.
                     </p>
                   </div>
 
