@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bg-brand-dark {
+  background-color: #0a1014;
+}
+
+.text-brand-accent {
+  color: #ECB53A;
+}
+
+.bg-brand-accent {
+  background-color: #ECB53A;
+}
+
+.border-brand-accent {
+  border-color: #ECB53A;
+}
+
+.hover\:bg-brand-accent:hover {
+  background-color: #ECB53A;
+}
+
+.hover\:text-brand-accent:hover,
+.hover\:text-yellow-600:hover {
+  color: #ECB53A;
+}
+
+.hover\:text-white:hover {
+  color: #ffffff;
+}
+
+/* Fix for enterprise button hover */
+.hover\:bg-brand-accent:hover {
+  color: #000000 !important;
+}
+
+.gradient-hero {
+  background: linear-gradient(135deg, #0a1014 0%, #1a2024 100%);
+}
+
+.shadow-brand {
+  box-shadow: 0 10px 25px rgba(236, 181, 58, 0.1);
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hover-scale {
+  transition: transform 0.2s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Fix text visibility issues */
+.text-brand-dark {
+  color: #0a1014;
+}
+
+/* Ensure proper contrast for all text elements */
+.bg-brand-accent .text-brand-dark {
+  color: #0a1014 !important;
+}
+
+.bg-brand-accent:hover .text-brand-dark {
+  color: #0a1014 !important;
+}
+
+/* Fix Learn More button hover state */
+.hover\:text-gray-900:hover,
+.hover\:bg-brand-accent:hover {
+  color: #111827 !important;
+}
+
+/* Ensure all buttons with brand accent background have proper text contrast */
+.bg-brand-accent {
+  color: #111827 !important;
+}
+
+/* Fix brand accent hover states */
+.hover\:bg-brand-accent:hover {
+  background-color: #ECB53A !important;
+  color: #111827 !important;
+}
+
+/* Ensure proper contrast for all text on dark backgrounds */
+.bg-brand-dark .text-white {
+  color: #ffffff !important;
+}
+
+.bg-brand-dark .text-brand-accent {
+  color: #ECB53A !important;
+}
+
+.bg-brand-dark .text-gray-300 {
+  color: #d1d5db !important;
+}
+
+/* Line clamp utility for blog excerpts */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

@@ -1,0 +1,18 @@
+# AccessIQ Tech - Robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /backend/
+Disallow: /dashboard/
+Disallow: /checkout/
+Disallow: /private-checkout
+Disallow: /verify-email
+Disallow: /reset-password
+
+# Sitemap
+Sitemap: https://accessiqtech.net/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1

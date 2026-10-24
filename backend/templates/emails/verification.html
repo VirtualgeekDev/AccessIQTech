@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Your Account - AccessIQ Tech</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; }
+        .container { max-width: 600px; margin: 0 auto; background-color: #ffffff; }
+        .header { background-color: #0a1014; padding: 30px; text-align: center; }
+        .logo { color: #ECB53A; font-size: 24px; font-weight: bold; }
+        .content { padding: 40px 30px; }
+        .button { display: inline-block; background-color: #ECB53A; color: #0a1014; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 20px 0; }
+        .footer { background-color: #f8f9fa; padding: 20px 30px; text-align: center; color: #666; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">AccessIQ Tech</div>
+        </div>
+        
+        <div class="content">
+            <h1 style="color: #333; margin-bottom: 20px;">Welcome to AccessIQ Tech!</h1>
+            
+            <p>Hi {{name}},</p>
+            
+            <p>Thank you for signing up for AccessIQ Tech! To complete your registration and start your free trial, please verify your email address by clicking the button below:</p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="{{verification_url}}" class="button">Verify Email Address</a>
+            </div>
+            
+            <p>If the button doesn't work, you can copy and paste this link into your browser:</p>
+            <p style="word-break: break-all; color: #666;">{{verification_url}}</p>
+            
+            <p>This verification link will expire in 24 hours for security reasons.</p>
+            
+            <p>Once verified, you'll have full access to:</p>
+            <ul>
+                <li>AI-powered website accessibility scanning</li>
+                <li>WCAG 2.1 compliance reports</li>
+                <li>One-click accessibility fixes</li>
+                <li>14-day free trial with no credit card required</li>
+            </ul>
+            
+            <p>If you didn't create an account with AccessIQ Tech, please ignore this email.</p>
+            
+            <p>Best regards,<br>The AccessIQ Tech Team</p>
+        </div>
+        
+        <div class="footer">
+            <p>AccessIQ Tech | San Francisco, CA | support@accessiqtech.net</p>
+            <p>© 2025 AccessIQ Tech. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

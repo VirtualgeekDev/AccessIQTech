@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Confirmation - AccessIQ Tech</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; }
+        .container { max-width: 600px; margin: 0 auto; background-color: #ffffff; }
+        .header { background-color: #0a1014; padding: 30px; text-align: center; }
+        .logo { color: #ECB53A; font-size: 24px; font-weight: bold; }
+        .content { padding: 40px 30px; }
+        .button { display: inline-block; background-color: #ECB53A; color: #0a1014; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 20px 0; }
+        .footer { background-color: #f8f9fa; padding: 20px 30px; text-align: center; color: #666; font-size: 14px; }
+        .success { background-color: #d4edda; border: 1px solid #c3e6cb; padding: 15px; border-radius: 5px; margin: 20px 0; color: #155724; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">AccessIQ Tech</div>
+        </div>
+        
+        <div class="content">
+            <h1 style="color: #333; margin-bottom: 20px;">Payment Confirmation</h1>
+            
+            <p>Hi {{name}},</p>
+            
+            <div class="success">
+                <strong>✅ Payment Successful!</strong><br>
+                Your payment of {{amount}} has been processed successfully.
+            </div>
+            
+            <p>Thank you for your payment! Your AccessIQ Tech subscription is now active and you have full access to all features.</p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="{{invoice_url}}" class="button">View Invoice</a>
+            </div>
+            
+            <h3 style="color: #333;">What's included in your subscription:</h3>
+            <ul>
+                <li>✅ Unlimited website accessibility scans</li>
+                <li>✅ AI-powered WCAG 2.1 compliance reports</li>
+                <li>✅ One-click accessibility fixes</li>
+                <li>✅ Priority customer support</li>
+                <li>✅ API access for integrations</li>
+                <li>✅ Advanced reporting and analytics</li>
+            </ul>
+            
+            <p>You can manage your subscription, view invoices, and update payment methods in your account dashboard.</p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="{{dashboard_url}}" class="button">Go to Dashboard</a>
+            </div>
+            
+            <p>If you have any questions about your subscription or need help getting started, our support team is here to help at support@accessiqtech.net</p>
+            
+            <p>Thank you for choosing AccessIQ Tech!</p>
+            
+            <p>Best regards,<br>The AccessIQ Tech Team</p>
+        </div>
+        
+        <div class="footer">
+            <p>AccessIQ Tech | San Francisco, CA | support@accessiqtech.net</p>
+            <p>© 2025 AccessIQ Tech. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

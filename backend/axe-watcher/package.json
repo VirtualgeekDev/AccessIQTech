@@ -1,0 +1,18 @@
+{
+  "name": "accessiq-axe-watcher",
+  "version": "1.0.0",
+  "description": "Axe Developer Hub integration for AccessIQ Tech",
+  "main": "scan.js",
+  "type": "module",
+  "scripts": {
+    "scan": "node scan.js",
+    "install-deps": "npm install"
+  },
+  "dependencies": {
+    "@axe-core/puppeteer": "^4.10.0",
+    "puppeteer": "^23.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
