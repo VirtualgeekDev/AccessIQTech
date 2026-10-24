@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node -e \"const fs=require('fs'),path=require('path');if(fs.existsSync('.htaccess'))fs.copyFileSync('.htaccess','dist/.htaccess');fs.copyFileSync('dist/index.html','dist/404.html');['subscription','private-checkout','features','pricing','about','blog','integrations','contact','login','signup','checkout','privacy','terms','cookie-policy','gdpr','refund-policy','payment-policy','docs','verify-email','reset-password','dashboard','profile','billing','admin'].forEach(r=>{fs.mkdirSync(path.join('dist',r),{recursive:true});fs.copyFileSync('dist/index.html',path.join('dist',r,'index.html'));});['api','backend'].forEach(d=>{if(fs.existsSync(d))fs.cpSync(d,path.join('dist',d),{recursive:true});});\"",
     "lint": "eslint .",
     "preview": "vite preview"
   },
